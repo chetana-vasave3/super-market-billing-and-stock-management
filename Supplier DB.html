@@ -1,0 +1,38 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link type="text/css" rel="stylesheet" href="resources/sheet.css" >
+<style type="text/css">.ritz .waffle a { color: inherit; }</style><div class="ritz grid-container" dir="ltr"><table class="waffle" cellspacing="0" cellpadding="0"><thead><tr><th class="row-header freezebar-origin-ltr"></th><th id="1575050815C0" style="width:60px;" class="column-headers-background">A</th><th id="1575050815C1" style="width:88px;" class="column-headers-background">B</th><th id="1575050815C2" style="width:88px;" class="column-headers-background">C</th><th id="1575050815C3" style="width:88px;" class="column-headers-background">D</th><th id="1575050815C4" style="width:88px;" class="column-headers-background">E</th><th id="1575050815C5" style="width:88px;" class="column-headers-background">F</th><th id="1575050815C6" style="width:60px;" class="column-headers-background">G</th><th id="1575050815C7" style="width:60px;" class="column-headers-background">H</th><th id="1575050815C8" style="width:60px;" class="column-headers-background">I</th><th id="1575050815C9" style="width:60px;" class="column-headers-background">J</th><th id="1575050815C10" style="width:60px;" class="column-headers-background">K</th><th id="1575050815C11" style="width:60px;" class="column-headers-background">L</th><th id="1575050815C12" style="width:60px;" class="column-headers-background">M</th><th id="1575050815C13" style="width:60px;" class="column-headers-background">N</th><th id="1575050815C14" style="width:60px;" class="column-headers-background">O</th></tr></thead><tbody><tr style="height: 18px"><th id="1575050815R0" style="height: 18px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 18px">1</div></th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr style="height: 18px"><th id="1575050815R1" style="height: 18px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 18px">2</div></th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr style="height: 18px"><th id="1575050815R2" style="height: 18px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 18px">3</div></th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr style="height: 18px"><th id="1575050815R3" style="height: 18px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 18px">4</div></th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div><div id='embed_190876582' class='waffle-embedded-object-overlay' style='width: 79px; height: 54px; display: block;'><img src='resources/drawing0.png' style='display: block;' height='54' width='79'></div><script nonce="N1F06RPeQ7CnuT8On42J_Q">
+  function posObj(sheet, id, row, col, x, y) {
+      var rtl = false;
+      var sheetElement = document.getElementById(sheet);
+      if (!sheetElement) {
+        sheetElement = document.getElementById(sheet + '-grid-container');
+      }
+      if (sheetElement) {
+        rtl = sheetElement.getAttribute('dir') == 'rtl';
+      }
+      var r = document.getElementById(sheet+'R'+row);
+      var c = document.getElementById(sheet+'C'+col);
+      if (r && c) {
+        var objElement = document.getElementById(id);
+        var s = objElement.style;
+        var t = y;
+        while (r && r != sheetElement) {
+          t += r.offsetTop;
+          r = r.offsetParent;
+      }
+      var offsetX = x;
+      while (c && c != sheetElement) {
+        offsetX += c.offsetLeft;
+        c = c.offsetParent;
+      }
+      if (rtl) {
+        offsetX -= objElement.offsetWidth;
+      }
+      s.left = offsetX + 'px';
+      s.top = t + 'px';
+      s.display = 'block';
+      s.border = '1px solid #000000';
+    }
+  }
+
+  function posObjs() {
+  posObj('1575050815', 'embed_190876582', 0, 12, 75, 15);}posObjs();</script>
